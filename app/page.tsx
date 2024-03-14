@@ -6,6 +6,8 @@ import { useEffect, useState } from 'react';
 import TravelInfo from "@/app/ui/home/TravelInfo";
 import TrendingDestinations from "@/app/ui/home/TrendingDestinations";
 import BookNow from "@/app/ui/home/BookNow";
+import TravelAtt from "@/app/ui/home/TravelAtt";
+import Banner from "@/app/ui/home/Banner";
 
 
 export default function Home() {
@@ -35,6 +37,8 @@ export default function Home() {
         <TravelInfo />
         <TrendingDestinations />
         <BookNow />
+        <TravelAtt />
+        <Banner />
     </>
   );
 }

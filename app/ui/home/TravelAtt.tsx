@@ -1,7 +1,7 @@
 // @ts-ignore
 import Link from 'next/link';
 import React from 'react';
-import toursData from '../../../public/data/tours/tours-locations.json';
+import toursData from '../../../public/data/tours/top-attractions.json';
 
 interface Tour {
     id: number;
@@ -10,7 +10,7 @@ interface Tour {
     image: string;
 }
 
-const TrendingDestinations: React.FC = () => {
+const TravelAtt: React.FC = () => {
     const Skeleton: React.FC = () => {
         return (
             <div className="flex items-center justify-center h-20 w-full rounded overflow-hidden animate-pulse bg-light_gray">
@@ -31,12 +31,15 @@ const TrendingDestinations: React.FC = () => {
                     See All
                 </Link>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 pb-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 pb-4">
                 {toursData.tours.map((tour: Tour) => (
-                    <div key={tour.id} className="overflow-hidden flex flex-col items-left">
-                        <img src={tour.image} alt={tour.name} className="w-48 h-48 object-cover mb-2 rounded-lg" />
-                        <h3 className="text-orange text-sm mb-1 ду">{tour.name}</h3>
-                        <p className="text-dark_blue text-sm">{tour.description}</p>
+                    <div key={tour.id} className="flex flex-row items-left gap-4">
+                        <img src={tour.image} alt={tour.name} className="w-20 h-20 object-cover mb-2 rounded-lg" />
+                        <div className='flex flex-col items-left justify-center'>
+                            <h3 className="text-orange text-sm mb-1 ду">{tour.name}</h3>
+                            <p className="text-dark_blue text-sm">{tour.description}</p>
+                        </div>
+
                     </div>
                 ))}
             </div>
@@ -44,4 +47,4 @@ const TrendingDestinations: React.FC = () => {
     );
 };
 
-export default TrendingDestinations;
+export default TravelAtt;

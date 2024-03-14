@@ -102,7 +102,7 @@ const TourSlider: React.FC = () => {
     }, []);
 
     return (
-        <div className="relative px-4">
+        <div className="relative px-4 container mx-auto">
             <button className="absolute top-[60%] left-[-5px] transform -translate-y-1/2 bg-gray-200 p-2 rounded-l-md z-10" onClick={goToPrevSlide}>
                 <svg className="h-8 w-8 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
