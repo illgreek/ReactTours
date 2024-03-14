@@ -34,7 +34,7 @@ const TrendingDestinations: React.FC = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 pb-4">
                 {toursData.tours.map((tour: Tour) => (
                     <div key={tour.id} className="overflow-hidden flex flex-col items-left">
-                        <img src={tour.image} alt={tour.name} className="w-48 h-48 object-cover mb-2 rounded-lg" />
+                        <Image src={tour.image} alt={tour.name} className="w-48 h-48 object-cover mb-2 rounded-lg" />
                         <h3 className="text-orange text-sm mb-1 ду">{tour.name}</h3>
                         <p className="text-dark_blue text-sm">{tour.description}</p>
                     </div>

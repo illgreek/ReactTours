@@ -1,6 +1,7 @@
 // @ts-ignore
 import Link from 'next/link';
 import React from 'react';
+import Image from "next/image";
 
 interface Tour {
     id: number;
@@ -37,7 +38,7 @@ const SpecialOffers: React.FC<Props> = ({ tours }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
                 {tours.slice(0, 4).map((tour) => (
                     <div key={tour.id} className="overflow-hidden flex gap-4">
-                        <img src={tour.image} alt={tour.name} className="w-20 h-20 object-cover" />
+                        <Image src={tour.image} alt={tour.name} className="w-20 h-20 object-cover" />
                         <div className=" w-2/3">
                             <h3 className="text-orange text-sm mb-2">{tour.name}</h3>
                             <p className="text-dark_blue text-sm">{tour.description}</p>
