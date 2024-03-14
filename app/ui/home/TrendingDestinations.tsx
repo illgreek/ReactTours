@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import React from 'react';
 import toursData from '../../../public/data/tours/tours-locations.json';
+import Image from "next/image";
 
 interface Tour {
     id: number;
