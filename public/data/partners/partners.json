@@ -1,0 +1,28 @@
+{
+  "partners": [
+    {
+      "id": 1,
+      "logo": "/assets/logos/l1.png"
+    },
+    {
+      "id": 2,
+      "logo": "/assets/logos/l2.png"
+    },
+    {
+      "id": 3,
+      "logo": "/assets/logos/l3.png"
+    },
+    {
+      "id": 4,
+      "logo": "/assets/logos/l4.png"
+    },
+    {
+      "id": 5,
+      "logo": "/assets/logos/l5.png"
+    },
+    {
+      "id": 6,
+      "logo": "/assets/logos/l6.png"
+    }
+  ]
+}

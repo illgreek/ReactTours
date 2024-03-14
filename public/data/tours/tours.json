@@ -9,7 +9,7 @@
       "group_size": 10,
       "age_category": "Adults",
       "languages": ["English", "Spanish"],
-      "pictures": ["assets/tours-images/city_explorer1.png", "assets/tours-images/city_explorer2.jpg", "assets/tours-images/city_explorer3.jpg"]
+      "pictures": ["/assets/tours-images/city_explorer1.png", "/assets/tours-images/city_explorer2.jpg", "/assets/tours-images/city_explorer3.jpg"]
     },
     {
       "id": 2,
@@ -20,7 +20,7 @@
       "group_size": 8,
       "age_category": "Adults",
       "languages": ["English", "French"],
-      "pictures": ["assets/tours-images/mountain_trek1.jpg", "assets/tours-images/mountain_trek2.jpg", "assets/tours-images/mountain_trek3.jpg"]
+      "pictures": ["/assets/tours-images/mountain_trek1.jpg", "/assets/tours-images/mountain_trek2.jpg", "/assets/tours-images/mountain_trek3.jpg"]
     },
     {
       "id": 3,
@@ -31,7 +31,7 @@
       "group_size": 12,
       "age_category": "Adults",
       "languages": ["English", "Italian"],
-      "pictures": ["assets/tours-images/beach_getaway1.jpg", "assets/tours-images/beach_getaway2.jpg", "assets/tours-images/beach_getaway3.jpg"]
+      "pictures": ["/assets/tours-images/beach_getaway1.jpg", "/assets/tours-images/beach_getaway2.jpg", "/assets/tours-images/beach_getaway3.jpg"]
     },
     {
       "id": 4,
@@ -42,7 +42,7 @@
       "group_size": 15,
       "age_category": "Adults",
       "languages": ["English", "German"],
-      "pictures": ["assets/tours-images/cultural_tour1.jpg", "assets/tours-images/cultural_tour2.jpg", "assets/tours-images/cultural_tour3.jpg"]
+      "pictures": ["/assets/tours-images/cultural_tour1.jpg", "/assets/tours-images/cultural_tour2.jpg", "/assets/tours-images/cultural_tour3.jpg"]
     },
     {
       "id": 5,
@@ -53,7 +53,7 @@
       "group_size": 10,
       "age_category": "Adults",
       "languages": ["English", "Spanish"],
-      "pictures": ["assets/tours-images/safari_expedition1.jpg", "assets/tours-images/safari_expedition2.jpg", "assets/tours-images/safari_expedition3.jpg"]
+      "pictures": ["/assets/tours-images/safari_expedition1.jpg", "/assets/tours-images/safari_expedition2.jpg", "/assets/tours-images/safari_expedition3.jpg"]
     },
     {
       "id": 6,
@@ -64,7 +64,7 @@
       "group_size": 8,
       "age_category": "Adults",
       "languages": ["English", "French"],
-      "pictures": ["assets/tours-images/wine_tasting1.jpg", "assets/tours-images/wine_tasting2.jpg", "assets/tours-images/wine_tasting3.jpg"]
+      "pictures": ["/assets/tours-images/wine_tasting1.jpg", "/assets/tours-images/wine_tasting2.jpg", "/assets/tours-images/wine_tasting3.jpg"]
     },
     {
       "id": 7,
@@ -75,7 +75,7 @@
       "group_size": 12,
       "age_category": "Adults",
       "languages": ["English", "Italian"],
-      "pictures": ["assets/tours-images/castle_tour1.jpg", "assets/tours-images/castle_tour2.jpg", "assets/tours-images/castle_tour3.jpg"]
+      "pictures": ["/assets/tours-images/castle_tour1.jpg", "/assets/tours-images/castle_tour2.jpg", "/assets/tours-images/castle_tour3.jpg"]
     },
     {
       "id": 8,
@@ -86,7 +86,7 @@
       "group_size": 10,
       "age_category": "Adults",
       "languages": ["English", "Spanish"],
-      "pictures": ["assets/tours-images/culinary_tour1.jpg", "assets/tours-images/culinary_tour2.jpg", "assets/tours-images/culinary_tour3.jpg"]
+      "pictures": ["/assets/tours-images/culinary_tour1.jpg", "/assets/tours-images/culinary_tour2.jpg", "/assets/tours-images/culinary_tour3.jpg"]
     },
     {
       "id": 9,
@@ -97,7 +97,7 @@
       "group_size": 10,
       "age_category": "Adults",
       "languages": ["English", "French"],
-      "pictures": ["assets/tours-images/adventure_sports1.jpg", "assets/tours-images/adventure_sports2.jpg", "assets/tours-images/adventure_sports3.jpg"]
+      "pictures": ["/assets/tours-images/adventure_sports1.jpg", "/assets/tours-images/adventure_sports2.jpg", "/assets/tours-images/adventure_sports3.jpg"]
     },
     {
       "id": 10,
@@ -108,7 +108,7 @@
       "group_size": 12,
       "age_category": "Adults",
       "languages": ["English", "German"],
-      "pictures": ["assets/tours-images/island_hopping1.jpg", "assets/tours-images/island_hopping2.jpg", "assets/tours-images/island_hopping3.jpg"]
+      "pictures": ["/assets/tours-images/island_hopping1.jpg", "/assets/tours-images/island_hopping2.jpg", "/assets/tours-images/island_hopping3.jpg"]
     },
     {
       "id": 11,
@@ -119,7 +119,7 @@
       "group_size": 15,
       "age_category": "Adults",
       "languages": ["English", "Spanish"],
-      "pictures": ["assets/tours-images/art_architecture1.jpg", "assets/tours-images/art_architecture2.jpg", "assets/tours-images/art_architecture3.jpg"]
+      "pictures": ["/assets/tours-images/art_architecture1.jpg", "/assets/tours-images/art_architecture2.jpg", "/assets/tours-images/art_architecture3.jpg"]
     },
     {
       "id": 12,
@@ -130,7 +130,7 @@
       "group_size": 8,
       "age_category": "Adults",
       "languages": ["English", "Italian"],
-      "pictures": ["assets/tours-images/photography_expedition1.jpg", "assets/tours-images/photography_expedition2.jpg", "assets/tours-images/photography_expedition3.jpg"]
+      "pictures": ["/assets/tours-images/photography_expedition1.jpg", "/assets/tours-images/photography_expedition2.jpg", "/assets/tours-images/photography_expedition3.jpg"]
     }
   ]
 }

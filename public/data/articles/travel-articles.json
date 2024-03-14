@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "image": "/assets/articles-images/b1.png",
+      "tag": "Travel Tips",
+      "date": "March 5, 2024",
+      "author": "John Doe",
+      "title": "10 Essential Travel Hacks Every Traveler Should Know"
+    },
+    {
+      "id": 2,
+      "image": "/assets/articles-images/b2.png",
+      "tag": "Destination Guides",
+      "date": "February 20, 2024",
+      "author": "Jane Smith",
+      "title": "A Complete Guide to Exploring Paris in a Week"
+    },
+    {
+      "id": 3,
+      "image": "/assets/articles-images/b3.png",
+      "tag": "Adventure",
+      "date": "January 15, 2024",
+      "author": "Mike Johnson",
+      "title": "Hiking the Inca Trail: A Journey to Machu Picchu"
+    }
+  ]
+}

@@ -8,6 +8,9 @@ import TrendingDestinations from "@/app/ui/home/TrendingDestinations";
 import BookNow from "@/app/ui/home/BookNow";
 import TravelAtt from "@/app/ui/home/TravelAtt";
 import Banner from "@/app/ui/home/Banner";
+import ChooseTours from "@/app/ui/home/ChooseTours";
+import TravelArticles from "@/app/ui/home/TravelArticles";
+import Partners from "@/app/ui/home/Partners";
 
 
 export default function Home() {
@@ -39,6 +42,9 @@ export default function Home() {
         <BookNow />
         <TravelAtt />
         <Banner />
+        <ChooseTours />
+        <TravelArticles />
+        <Partners />
     </>
   );
 }

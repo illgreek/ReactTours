@@ -1,0 +1,28 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "icon": "/assets/tours-images/i1.png",
+      "title": "Ultimate flexibility",
+      "text": "You're in control, with free cancellation and payment options to satisfy any plan or budget."
+    },
+    {
+      "id": 2,
+      "icon": "/assets/tours-images/i2.png",
+      "title": "Memorable experiences",
+      "text": "Browse and book tours and activities so incredible, you'll want to tell your friends."
+    },
+    {
+      "id": 3,
+      "icon": "/assets/tours-images/i3.png",
+      "title": "Quality at our core",
+      "text": "High-quality standards. Millions of reviews. A Tour company."
+    },
+    {
+      "id": 4,
+      "icon": "/assets/tours-images/i4.png",
+      "title": "Award-winning support",
+      "text": "New price? New plan? No problem. We're here to help, 24/7."
+    }
+  ]
+}

@@ -126,7 +126,7 @@ const TourSlider: React.FC = () => {
                         {limitedTours.map((tour: Tour) => (
                             <SwiperSlide key={tour.id}>
                                 <div className="bg-white rounded-lg overflow-hidden flex flex-col h-full ">
-                                    <Image src={`${tour.pictures[0]}`} alt={tour.name} className="w-full h-40 object-cover aspect-video" />
+                                    <Image src={`${tour.pictures[0]}`} alt={tour.name} width='300' height='200' className="w-full h-40 object-cover aspect-video" />
                                     <div className="p-4 flex flex-col justify-between h-full">
                                         <h3 className="text-lg font-bold text-dark_blue mb-2">{tour.name}</h3>
                                         <p className="text-dark_blue">{tour.description}</p>

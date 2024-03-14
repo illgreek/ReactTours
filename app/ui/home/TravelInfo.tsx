@@ -22,14 +22,14 @@ const TravelInfo: React.FC = () => {
                     <div className="flex justify-around items-center w-1/2 flex-col gap-10">
                         {/* Block 1 */}
                         <div className="text-center bg-white p-8 rounded-xl min-w-[240px]">
-                            <Image src="t1.png" alt="Logo 1" className="w-16 h-16 mx-auto mb-4" />
+                            <Image src="/t1.png" alt="Logo 1" width='60' height='60' className="w-16 h-16 mx-auto mb-4" />
                             <p className="text-3xl font-bold text-orange">240</p>
                             <p className="text-dark_blue">Total Destinations</p>
                         </div>
 
                         {/* Block 2 */}
                         <div className="text-center bg-white p-8 rounded-xl min-w-[240px]">
-                            <Image src="t2.png" alt="Logo 2" className="w-16 h-16 mx-auto mb-4" />
+                            <Image src="/t2.png" alt="Logo 2" width='60' height='60' className="w-16 h-16 mx-auto mb-4" />
                             <p className="text-3xl font-bold text-orange">92,842</p>
                             <p className="text-dark_blue">Happy Customers</p>
                         </div>
@@ -37,7 +37,7 @@ const TravelInfo: React.FC = () => {
 
                     {/* Block 3 */}
                     <div className="text-center bg-white p-8 rounded-xl min-w-[240px]">
-                        <Image src="t3.png" alt="Logo 3" className="w-16 h-16 mx-auto mb-4" />
+                        <Image src="/t3.png" alt="Logo 3" width='60' height='60'  className="w-16 h-16 mx-auto mb-4" />
                         <p className="text-3xl font-bold text-orange">3,672</p>
                         <p className="text-dark_blue">Amazing Tours</p>
                     </div>

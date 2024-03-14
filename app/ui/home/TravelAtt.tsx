@@ -35,7 +35,7 @@ const TravelAtt: React.FC = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 pb-4">
                 {toursData.tours.map((tour: Tour) => (
                     <div key={tour.id} className="flex flex-row items-left gap-4">
-                        <Image src={tour.image} alt={tour.name} className="w-20 h-20 object-cover mb-2 rounded-lg" />
+                        <Image src={tour.image} alt={tour.name} width='100' height='100' className="w-20 h-20 object-cover mb-2 rounded-lg" />
                         <div className='flex flex-col items-left justify-center'>
                             <h3 className="text-orange text-sm mb-1 ду">{tour.name}</h3>
                             <p className="text-dark_blue text-sm">{tour.description}</p>
