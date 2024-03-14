@@ -1,0 +1,136 @@
+{
+  "tours": [
+    {
+      "id": 1,
+      "name": "City Explorer Tour",
+      "price_per_day": 120,
+      "description": "Discover the hidden gems of the city with our expert guides. This tour includes visits to historic landmarks, local markets, and iconic neighborhoods.",
+      "duration": "3 days",
+      "group_size": 10,
+      "age_category": "Adults",
+      "languages": ["English", "Spanish"],
+      "pictures": ["assets/tours-images/city_explorer1.png", "assets/tours-images/city_explorer2.jpg", "assets/tours-images/city_explorer3.jpg"]
+    },
+    {
+      "id": 2,
+      "name": "Mountain Adventure Trek",
+      "price_per_day": 200,
+      "description": "Embark on an unforgettable journey through breathtaking mountain trails. This trek offers stunning views, camping under the stars.",
+      "duration": "5 days",
+      "group_size": 8,
+      "age_category": "Adults",
+      "languages": ["English", "French"],
+      "pictures": ["assets/tours-images/mountain_trek1.jpg", "assets/tours-images/mountain_trek2.jpg", "assets/tours-images/mountain_trek3.jpg"]
+    },
+    {
+      "id": 3,
+      "name": "Beach Paradise Getaway",
+      "price_per_day": 150,
+      "description": "Relax and unwind on pristine sandy beaches. This getaway includes water sports, beachfront accommodations, and vibrant beach parties.",
+      "duration": "4 days",
+      "group_size": 12,
+      "age_category": "Adults",
+      "languages": ["English", "Italian"],
+      "pictures": ["assets/tours-images/beach_getaway1.jpg", "assets/tours-images/beach_getaway2.jpg", "assets/tours-images/beach_getaway3.jpg"]
+    },
+    {
+      "id": 4,
+      "name": "Cultural Heritage Tour",
+      "price_per_day": 180,
+      "description": "Immerse yourself in the rich cultural heritage of the region. Visit ancient ruins, museums, and experience traditional cuisine.",
+      "duration": "5 days",
+      "group_size": 15,
+      "age_category": "Adults",
+      "languages": ["English", "German"],
+      "pictures": ["assets/tours-images/cultural_tour1.jpg", "assets/tours-images/cultural_tour2.jpg", "assets/tours-images/cultural_tour3.jpg"]
+    },
+    {
+      "id": 5,
+      "name": "Wildlife Safari Expedition",
+      "price_per_day": 250,
+      "description": "Embark on a thrilling safari adventure through diverse landscapes. Spot exotic wildlife, stay in safari lodges, and enjoy nightly campfires.",
+      "duration": "7 days",
+      "group_size": 10,
+      "age_category": "Adults",
+      "languages": ["English", "Spanish"],
+      "pictures": ["assets/tours-images/safari_expedition1.jpg", "assets/tours-images/safari_expedition2.jpg", "assets/tours-images/safari_expedition3.jpg"]
+    },
+    {
+      "id": 6,
+      "name": "Wine Tasting Tour",
+      "price_per_day": 130,
+      "description": "Indulge in the finest wines of the region. This tour includes visits to vineyards, wine tastings, and gourmet meals paired with wines.",
+      "duration": "2 days",
+      "group_size": 8,
+      "age_category": "Adults",
+      "languages": ["English", "French"],
+      "pictures": ["assets/tours-images/wine_tasting1.jpg", "assets/tours-images/wine_tasting2.jpg", "assets/tours-images/wine_tasting3.jpg"]
+    },
+    {
+      "id": 7,
+      "name": "Historic Castle Tour",
+      "price_per_day": 160,
+      "description": "Step back in time with a tour of majestic castles. Explore the history, architecture, and legends of these iconic landmarks.",
+      "duration": "4 days",
+      "group_size": 12,
+      "age_category": "Adults",
+      "languages": ["English", "Italian"],
+      "pictures": ["assets/tours-images/castle_tour1.jpg", "assets/tours-images/castle_tour2.jpg", "assets/tours-images/castle_tour3.jpg"]
+    },
+    {
+      "id": 8,
+      "name": "Culinary Delights Tour",
+      "price_per_day": 140,
+      "description": "Savor the flavors of local cuisine on this culinary journey. Enjoy cooking classes, food market tours, and dining at top restaurants.",
+      "duration": "3 days",
+      "group_size": 10,
+      "age_category": "Adults",
+      "languages": ["English", "Spanish"],
+      "pictures": ["assets/tours-images/culinary_tour1.jpg", "assets/tours-images/culinary_tour2.jpg", "assets/tours-images/culinary_tour3.jpg"]
+    },
+    {
+      "id": 9,
+      "name": "Adventure Sports Expedition",
+      "price_per_day": 220,
+      "description": "Get your adrenaline pumping with thrilling adventure sports. Experience activities like rock climbing, zip-lining, and white-water rafting.",
+      "duration": "6 days",
+      "group_size": 10,
+      "age_category": "Adults",
+      "languages": ["English", "French"],
+      "pictures": ["assets/tours-images/adventure_sports1.jpg", "assets/tours-images/adventure_sports2.jpg", "assets/tours-images/adventure_sports3.jpg"]
+    },
+    {
+      "id": 10,
+      "name": "Island Hopping Adventure",
+      "price_per_day": 180,
+      "description": "Explore exotic islands and pristine beaches on this island hopping adventure. Snorkel in crystal-clear waters and relax on sandy shores.",
+      "duration": "5 days",
+      "group_size": 12,
+      "age_category": "Adults",
+      "languages": ["English", "German"],
+      "pictures": ["assets/tours-images/island_hopping1.jpg", "assets/tours-images/island_hopping2.jpg", "assets/tours-images/island_hopping3.jpg"]
+    },
+    {
+      "id": 11,
+      "name": "Art and Architecture Tour",
+      "price_per_day": 150,
+      "description": "Discover masterpieces of art and architecture. Visit museums, galleries, and iconic architectural landmarks.",
+      "duration": "4 days",
+      "group_size": 15,
+      "age_category": "Adults",
+      "languages": ["English", "Spanish"],
+      "pictures": ["assets/tours-images/art_architecture1.jpg", "assets/tours-images/art_architecture2.jpg", "assets/tours-images/art_architecture3.jpg"]
+    },
+    {
+      "id": 12,
+      "name": "Photography Expedition",
+      "price_per_day": 190,
+      "description": "Capture stunning landscapes and cultural moments on this photography expedition. Receive guidance from professional photographers.",
+      "duration": "5 days",
+      "group_size": 8,
+      "age_category": "Adults",
+      "languages": ["English", "Italian"],
+      "pictures": ["assets/tours-images/photography_expedition1.jpg", "assets/tours-images/photography_expedition2.jpg", "assets/tours-images/photography_expedition3.jpg"]
+    }
+  ]
+}

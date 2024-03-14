@@ -1,0 +1,40 @@
+{
+  "tours": [
+    {
+      "id": 1,
+      "name": "Paris",
+      "description": "100+ Tours",
+      "image": "/assets/tours-images/l1.png"
+    },
+    {
+      "id": 2,
+      "name": "Singapore",
+      "description": "300+ Tours",
+      "image": "/assets/tours-images/l2.png"
+    },
+    {
+      "id": 3,
+      "name": "Roma",
+      "description": "400+ Tours",
+      "image": "/assets/tours-images/l3.png"
+    },
+    {
+      "id": 4,
+      "name": "Bangkok",
+      "description": "100+ Tours",
+      "image": "/assets/tours-images/l4.png"
+    },
+    {
+      "id": 5,
+      "name": "Bali",
+      "description": "600+ Tours",
+      "image": "/assets/tours-images/l5.png"
+    },
+    {
+      "id": 6,
+      "name": "Phuket",
+      "description": "200+ Tours",
+      "image": "/assets/tours-images/l6.png"
+    }
+  ]
+}

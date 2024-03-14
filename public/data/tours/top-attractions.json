@@ -1,0 +1,58 @@
+{
+  "tours": [
+    {
+      "id": 1,
+      "name": "Colosseum",
+      "description": "100+ Tours",
+      "image": "/assets/tours-images/a1.png"
+    },
+    {
+      "id": 2,
+      "name": "Statue of Liberty",
+      "description": "300+ Tours",
+      "image": "/assets/tours-images/a2.png"
+    },
+    {
+      "id": 3,
+      "name": "Vatican Museums",
+      "description": "400+ Tours",
+      "image": "/assets/tours-images/a3.png"
+    },
+    {
+      "id": 4,
+      "name": "Eiffel Tower",
+      "description": "100+ Tours",
+      "image": "/assets/tours-images/a4.png"
+    },
+    {
+      "id": 5,
+      "name": "Tower of London",
+      "description": "600+ Tours",
+      "image": "/assets/tours-images/a5.png"
+    },
+    {
+      "id": 6,
+      "name": "National September 11 Memorial",
+      "description": "200+ Tours",
+      "image": "/assets/tours-images/a6.png"
+    },
+    {
+      "id": 7,
+      "name": "Stonehenge",
+      "description": "200+ Tours",
+      "image": "/assets/tours-images/a7.png"
+    },
+    {
+      "id": 8,
+      "name": "Antelope Canyon",
+      "description": "200+ Tours",
+      "image": "/assets/tours-images/a8.png"
+    },
+    {
+      "id": 9,
+      "name": "Louvre",
+      "description": "200+ Tours",
+      "image": "/assets/tours-images/a9.png"
+    }
+  ]
+}
