@@ -9,7 +9,7 @@ const TravelInfo: React.FC = () => {
                 <div className="w-full lg:w-1/2 pr-0 lg:pr-8">
                     <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 lg:mb-8">We Make World Travel Easy</h2>
                     <p className="text-lg lg:text-xl text-white mb-8 lg:mb-10">
-                        Traveling under your own power and at your own pace, you'll connect more meaningfully with your destination and have more fun!
+                        Traveling under your own power and at your own pace, youll connect more meaningfully with your destination and have more fun!
                     </p>
                     <button className="bg-white hover:bg-light_gray text-orange font-bold py-4 px-6 rounded lg:block flex mx-auto">
                         Explore Our Tours
