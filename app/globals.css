@@ -61,3 +61,18 @@ a:hover {
   animation: gradient 1s linear infinite;
 }
 
+.swiper-wrapper{
+  margin-bottom: 25px;
+}
+
+.swiper-pagination{
+  bottom: 0!important;
+}
+.swiper-pagination-bullet{
+  height: 10px!important;
+  width: 10px!important;
+}
+
+.swiper-pagination-bullet-active{
+  background: #EB662B!important;
+}

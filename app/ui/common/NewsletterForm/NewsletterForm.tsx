@@ -38,7 +38,7 @@ const NewsletterForm: React.FC = () => {
                 <input
                     type="email"
                     placeholder="Your email"
-                    className="bg-white px-4 py-2 rounded-l-md text-dark_blue"
+                    className="bg-white px-4 py-2 rounded-l-md text-dark_blue w-full"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     style={{ border: '1px solid #ccc' }}

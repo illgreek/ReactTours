@@ -35,7 +35,7 @@ const SpecialOffers: React.FC<Props> = ({ tours }) => {
                     See All
                 </Link>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
                 {tours.slice(0, 4).map((tour) => (
                     <div key={tour.id} className="overflow-hidden flex gap-4">
                         <Image src={tour.image} alt={tour.name} width='100' height='100' className="w-20 h-20 object-cover" />

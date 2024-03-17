@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Skeleton from 'react-loading-skeleton';
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -21,9 +20,22 @@ interface Tour {
     pictures: string[];
 }
 
+const Skeleton: React.FC<{ maxHeight: number }> = ({ maxHeight }) => {
+    return (
+        <div className="flex items-center justify-center h-20 w-full rounded overflow-hidden animate-pulse bg-light_gray" style={{ height: `${maxHeight}px` }}>
+            <div className="h-20 w-20 mr-4 bg-gray-300 animate-pulse"></div>
+            <div className="flex-1">
+                <div className="h-4 w-24 mb-2 bg-gray-300 animate-pulse"></div>
+                <div className="h-4 w-32 bg-gray-300 animate-pulse"></div>
+            </div>
+        </div>
+    );
+};
+
 const TourSlider: React.FC = () => {
     const swiperRef = useRef<any>(null);
     const [loading, setLoading] = useState<boolean>(true);
+    const [maxSlideHeight, setMaxSlideHeight] = useState<number | null>(null);
 
     const setSlideHeights = () => {
         if (swiperRef.current && swiperRef.current.swiper) {
@@ -43,9 +55,17 @@ const TourSlider: React.FC = () => {
                 slide.style.height = `${maxHeight}px`;
             });
 
+            setMaxSlideHeight(maxHeight);
             swiperInstance.update();
         }
     };
+
+    useEffect(() => {
+        const initializeSwiper = async () => {
+            setLoading(false);
+        };
+        initializeSwiper();
+    }, []);
 
     useEffect(() => {
         setSlideHeights();
@@ -56,24 +76,13 @@ const TourSlider: React.FC = () => {
         };
     }, [loading]);
 
-    const goToPrevSlide = () => {
-        if (swiperRef.current && swiperRef.current.swiper) {
-            swiperRef.current.swiper.slidePrev();
-        }
-    };
-
-    const goToNextSlide = () => {
-        if (swiperRef.current && swiperRef.current.swiper) {
-            swiperRef.current.swiper.slideNext();
-        }
-    };
-
     const swiperParams = {
+        modules: [Pagination, Autoplay],
         slidesPerView: 4,
         spaceBetween: 30,
         loop: true,
         pagination: { clickable: true },
-        autoplay: { delay: 5000 },
+        autoplay: { delay: 3000 },
         navigation: false,
         breakpoints: {
             1: { slidesPerView: 1 },
@@ -86,60 +95,52 @@ const TourSlider: React.FC = () => {
 
     const limitedTours = toursData.tours.slice(0, 6);
 
-    const skeletonCards = Array.from({ length: 6 }, (_, index) => (
-        <SwiperSlide key={`skeleton-${index}`}>
-            <div className="animate-pulse bg-light_gray rounded-lg overflow-hidden flex flex-col h-full ">
-                <Skeleton height={200} />
-                <div className="p-4 flex flex-col justify-between h-full">
-                    <Skeleton height={20} width="80%" style={{ marginBottom: '8px' }} />
-                    <Skeleton count={2} height={16} width="100%" />
+    if (loading) {
+        return (
+            <div className="relative px-4 container mx-auto">
+                <div className="container mx-auto px-4 py-8">
+                    <h2 className="text-2xl font-bold text-dark_blue mb-4">Featured Trips</h2>
+                    <Swiper {...swiperParams}>
+                        <div className="mb-20">
+                            {Array.from({ length: 6 }).map((_, index) => (
+                                <SwiperSlide key={index}>
+                                    <Skeleton maxHeight={maxSlideHeight || 200} />
+                                </SwiperSlide>
+                            ))}
+                        </div>
+                    </Swiper>
                 </div>
             </div>
-        </SwiperSlide>
-    ));
-
-    useEffect(() => {
-        setLoading(false);
-    }, []);
+        );
+    }
 
     return (
         <div className="relative px-4 container mx-auto">
-            <button className="absolute top-[60%] left-[-5px] transform -translate-y-1/2 bg-gray-200 p-2 rounded-l-md z-10" onClick={goToPrevSlide}>
-                <svg className="h-8 w-8 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
+            <button className="absolute top-[60%] left-[0px] transform -translate-y-1/2 bg-gray-200 p-2 rounded-l-md z-10" >
+
             </button>
-            <button className="absolute top-[60%] right-[-5px] transform -translate-y-1/2 bg-gray-200 p-2 rounded-r-md z-10" onClick={goToNextSlide}>
-                <svg className="h-8 w-8 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+            <button className="absolute top-[60%] right-[0px] transform -translate-y-1/2 bg-gray-200 p-2 rounded-r-md z-10" >
+
             </button>
             <div className="container mx-auto px-4 py-8">
                 <h2 className="text-2xl font-bold text-dark_blue mb-4">Featured Trips</h2>
-                {loading ? (
-                    <Swiper {...swiperParams} ref={swiperRef}>
-                        {skeletonCards}
-                    </Swiper>
-
-                ) : (
-                    <Swiper {...swiperParams} ref={swiperRef}>
-                        {limitedTours.map((tour: Tour) => (
-                            <SwiperSlide key={tour.id}>
-                                <div className="bg-white rounded-lg overflow-hidden flex flex-col h-full ">
-                                    <Image src={`${tour.pictures[0]}`} alt={tour.name} width='300' height='200' className="w-full h-40 object-cover aspect-video" />
-                                    <div className="p-4 flex flex-col justify-between h-full">
-                                        <h3 className="text-lg font-bold text-dark_blue mb-2">{tour.name}</h3>
-                                        <p className="text-dark_blue">{tour.description}</p>
-                                        <div className="flex justify-between mt-4 border-t border-light_gray pt-4">
-                                            <p className="text-dark_blue">{tour.duration}</p>
-                                            <p className="text-dark_blue">${tour.price_per_day} per day</p>
-                                        </div>
+                <Swiper {...swiperParams} ref={swiperRef}>
+                    {limitedTours.map((tour: Tour) => (
+                        <SwiperSlide key={tour.id}>
+                            <div className="bg-white rounded-lg overflow-hidden flex flex-col h-full">
+                                <Image src={`${tour.pictures[0]}`} alt={tour.name} width='300' height='200' className="w-full h-40 object-cover aspect-video" />
+                                <div className="p-4 flex flex-col justify-between h-full">
+                                    <h3 className="text-lg font-bold text-dark_blue mb-2">{tour.name}</h3>
+                                    <p className="text-dark_blue">{tour.description}</p>
+                                    <div className="flex justify-between mt-4 border-t border-light_gray pt-4">
+                                        <p className="text-dark_blue">{tour.duration}</p>
+                                        <p className="text-dark_blue">${tour.price_per_day} per day</p>
                                     </div>
                                 </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-                )}
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
         </div>
     );
