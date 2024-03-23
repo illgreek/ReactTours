@@ -17,8 +17,9 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
   background: rgba(235, 102, 43, 0.05);
+  padding-top: 94px;
+  color: #05073C;
 }
 
 @layer utilities {
@@ -76,3 +77,35 @@ a:hover {
 .swiper-pagination-bullet-active{
   background: #EB662B!important;
 }
+
+/* app/tours/[id]/styles.css */
+.my-masonry-grid {
+  display: flex;
+  margin-left: -10px;
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 10px;
+  background-clip: padding-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.next-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.my-masonry-grid_column:last-child {
+  margin-bottom: 0;
+}
+
+.ticket-button{
+  cursor: pointer;
+}
+
+

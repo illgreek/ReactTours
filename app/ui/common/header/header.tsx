@@ -1,6 +1,5 @@
 'use client';
-
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef  } from 'react';
 import Link from 'next/link';
 import useExchangeRate from "../../../data/API-rates/useExchangeRate";
 import Skeleton from './skeleton';
@@ -10,8 +9,7 @@ import Image from "next/image";
 const Header: React.FC = () => {
     const exchangeRate = useExchangeRate(); // получаем обменный курс
     const [userCurrencyCode, setUserCurrencyCode] = useState<string | null>(null);
-    const [isMenuOpen, setIsMenuOpen] = useState(false); // состояние для открытия/закрытия меню
-    const [isSticky, setIsSticky] = useState(false); // состояние для "стиким" хедера
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         const fetchUserCurrencyCode = async () => {
@@ -20,31 +18,19 @@ const Header: React.FC = () => {
         };
 
         fetchUserCurrencyCode();
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
     }, []);
 
-    const handleScroll = () => {
-        if (window.scrollY > 50) {
-            setIsSticky(true);
-        } else {
-            setIsSticky(false);
-        }
-    };
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
     return (
-        <header className={`bg-white ${isSticky ? 'fixed top-0 left-0 right-0 z-50' : ''}`}>
+        <header className="bg-white fixed top-0 left-0 right-0 z-50">
             <div className="container mx-auto flex justify-between items-center py-4 px-8">
                 <div className="flex justify-between w-full lg:w-auto items-center space-x-4 gap-20">
                     <Link className="text-xl font-bold" href="/">
-                        <Image width="100" height="100" src={"/logo.png"} alt={"logo"}/>
+                        <Image width="100" height="100" src={"/logo.png"} alt={"logo"} />
                     </Link>
 
                     {/* Burger menu icon */}

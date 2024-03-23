@@ -4,133 +4,505 @@
       "id": 1,
       "name": "City Explorer Tour",
       "price_per_day": 120,
-      "description": "Discover the hidden gems of the city with our expert guides. This tour includes visits to historic landmarks, local markets, and iconic neighborhoods.",
+      "description": "Experience the best of six iconic cities in this unforgettable 3-day adventure. From the romantic streets of Paris to the bustling markets of Bangkok, immerse yourself in the diverse cultures and breathtaking landmarks of each destination.\n\nDay 1: Paris\nBegin your journey in the City of Lights, Paris. Marvel at the timeless beauty of the Eiffel Tower as you enjoy a scenic boat cruise along the Seine River. Stroll through the charming Montmartre district and visit the iconic Notre-Dame Cathedral.\n\nDay 2: Singapore & Roma\nNext stop, the vibrant city-state of Singapore. Explore the futuristic Gardens by the Bay and indulge in a culinary adventure at a local hawker center. Then, transport yourself to ancient Rome as you step into the legendary Colosseum and wander through the historic streets of the Roman Forum.\n\nDay 3: Bangkok, Bali & Phuket\nIn Bangkok, Thailand's bustling capital, visit the majestic Grand Palace and reclining Buddha at Wat Pho. Then, escape to the tropical paradise of Bali, where you'll discover pristine beaches and lush rice terraces. Finally, conclude your journey in Phuket, Thailand's largest island. Cruise through the picturesque Phi Phi archipelago, snorkel in crystal-clear waters, and relax on the famous Maya Bay, featured in the movie 'The Beach'.\n\nThis all-inclusive tour includes comfortable accommodations, guided tours in English and Spanish, delicious local meals, entrance fees to attractions, and convenient hotel pickups and drop-offs. Join us for an unforgettable exploration of these incredible cities!",
+      "listing": [
+        "Marvel at the Eiffel Tower in Paris",
+        "Cruise along the Seine River",
+        "Explore Montmartre and Notre-Dame Cathedral",
+        "Visit the futuristic Gardens by the Bay in Singapore",
+        "Experience the Colosseum and Roman Forum in Rome",
+        "Discover the Grand Palace and Wat Pho in Bangkok",
+        "Relax on the beaches of Bali",
+        "Snorkel at Maya Bay in Phuket"
+      ],
       "duration": "3 days",
       "group_size": 10,
       "age_category": "Adults",
       "languages": ["English", "Spanish"],
-      "pictures": ["/assets/tours-images/city_explorer1.png", "/assets/tours-images/city_explorer2.jpg", "/assets/tours-images/city_explorer3.jpg"]
+      "pictures": ["/assets/tours-images/city_explorer1.png", "/assets/tours-images/city_explorer2.jpg", "/assets/tours-images/city_explorer3.jpg", "/assets/tours-images/mountain_trek1.jpg"],
+      "destinations": ["Paris", "Singapore", "Roma", "Bangkok", "Bali", "Phuket"],
+      "attractions": ["Eiffel Tower", "Gardens by the Bay", "Colosseum", "Grand Palace", "Maya Bay"],
+      "start_date": "2024-06-01",
+      "end_date": "2024-06-03",
+      "whatsIncluded": [
+        "Comfortable accommodations",
+        "Guided tours in English and Spanish",
+        "Delicious local meals",
+        "Entrance fees to attractions",
+        "Convenient hotel pickups and drop-offs"
+      ],
+      "whatsNotIncluded": [
+        "Flights to and from destinations",
+        "Personal expenses",
+        "Travel insurance"
+      ],
+      "itinerary": [
+        "Day 1: Paris - Marvel at the Eiffel Tower. Cruise along the Seine River. Explore Montmartre and Notre-Dame Cathedral.",
+        "Day 2: Singapore & Roma - Visit the futuristic Gardens by the Bay in Singapore. Experience the Colosseum and Roman Forum in Rome.",
+        "Day 3: Bangkok, Bali & Phuket - Discover the Grand Palace and Wat Pho in Bangkok. Relax on the beaches of Bali. Snorkel at Maya Bay in Phuket."
+      ]
     },
     {
       "id": 2,
       "name": "Mountain Adventure Trek",
       "price_per_day": 200,
       "description": "Embark on an unforgettable journey through breathtaking mountain trails. This trek offers stunning views, camping under the stars.",
+      "listing": [
+        "Marvel at the Eiffel Tower in Paris",
+        "Cruise along the Seine River",
+        "Explore Montmartre and Notre-Dame Cathedral",
+        "Visit the futuristic Gardens by the Bay in Singapore",
+        "Experience the Colosseum and Roman Forum in Rome",
+        "Discover the Grand Palace and Wat Pho in Bangkok",
+        "Relax on the beaches of Bali",
+        "Snorkel at Maya Bay in Phuket"
+      ],
       "duration": "5 days",
       "group_size": 8,
       "age_category": "Adults",
       "languages": ["English", "French"],
-      "pictures": ["/assets/tours-images/mountain_trek1.jpg", "/assets/tours-images/mountain_trek2.jpg", "/assets/tours-images/mountain_trek3.jpg"]
+      "pictures": ["/assets/tours-images/mountain_trek1.jpg", "/assets/tours-images/mountain_trek2.jpg", "/assets/tours-images/mountain_trek3.jpg"],
+      "destinations": ["Paris", "Roma", "Bali", "Phuket"],
+      "attractions": ["Eiffel Tower", "Colosseum"],
+      "start_date": "2024-07-10",
+      "end_date": "2024-07-14",
+      "whatsIncluded": [
+        "Comfortable accommodations",
+        "Guided tours in English and Spanish",
+        "Delicious local meals",
+        "Entrance fees to attractions",
+        "Convenient hotel pickups and drop-offs"
+      ],
+      "whatsNotIncluded": [
+        "Flights to and from destinations",
+        "Personal expenses",
+        "Travel insurance"
+      ],
+      "itinerary": [
+        "Day 1: Paris - Marvel at the Eiffel Tower. Cruise along the Seine River. Explore Montmartre and Notre-Dame Cathedral.",
+        "Day 2: Singapore & Roma - Visit the futuristic Gardens by the Bay in Singapore. Experience the Colosseum and Roman Forum in Rome.",
+        "Day 3: Bangkok, Bali & Phuket - Discover the Grand Palace and Wat Pho in Bangkok. Relax on the beaches of Bali. Snorkel at Maya Bay in Phuket."
+      ]
     },
     {
       "id": 3,
       "name": "Beach Paradise Getaway",
       "price_per_day": 150,
       "description": "Relax and unwind on pristine sandy beaches. This getaway includes water sports, beachfront accommodations, and vibrant beach parties.",
+      "listing": [
+        "Marvel at the Eiffel Tower in Paris",
+        "Cruise along the Seine River",
+        "Explore Montmartre and Notre-Dame Cathedral",
+        "Visit the futuristic Gardens by the Bay in Singapore",
+        "Experience the Colosseum and Roman Forum in Rome",
+        "Discover the Grand Palace and Wat Pho in Bangkok",
+        "Relax on the beaches of Bali",
+        "Snorkel at Maya Bay in Phuket"
+      ],
       "duration": "4 days",
       "group_size": 12,
       "age_category": "Adults",
       "languages": ["English", "Italian"],
-      "pictures": ["/assets/tours-images/beach_getaway1.jpg", "/assets/tours-images/beach_getaway2.jpg", "/assets/tours-images/beach_getaway3.jpg"]
+      "pictures": ["/assets/tours-images/beach_getaway1.jpg", "/assets/tours-images/beach_getaway2.jpg", "/assets/tours-images/beach_getaway3.jpg"],
+      "destinations": ["Bali", "Phuket"],
+      "attractions": ["Antelope Canyon"],
+      "start_date": "2024-08-20",
+      "end_date": "2024-08-23",
+      "whatsIncluded": [
+        "Comfortable accommodations",
+        "Guided tours in English and Spanish",
+        "Delicious local meals",
+        "Entrance fees to attractions",
+        "Convenient hotel pickups and drop-offs"
+      ],
+      "whatsNotIncluded": [
+        "Flights to and from destinations",
+        "Personal expenses",
+        "Travel insurance"
+      ],
+      "itinerary": [
+        "Day 1: Paris - Marvel at the Eiffel Tower. Cruise along the Seine River. Explore Montmartre and Notre-Dame Cathedral.",
+        "Day 2: Singapore & Roma - Visit the futuristic Gardens by the Bay in Singapore. Experience the Colosseum and Roman Forum in Rome.",
+        "Day 3: Bangkok, Bali & Phuket - Discover the Grand Palace and Wat Pho in Bangkok. Relax on the beaches of Bali. Snorkel at Maya Bay in Phuket."
+      ]
     },
     {
       "id": 4,
       "name": "Cultural Heritage Tour",
       "price_per_day": 180,
       "description": "Immerse yourself in the rich cultural heritage of the region. Visit ancient ruins, museums, and experience traditional cuisine.",
+      "listing": [
+        "Marvel at the Eiffel Tower in Paris",
+        "Cruise along the Seine River",
+        "Explore Montmartre and Notre-Dame Cathedral",
+        "Visit the futuristic Gardens by the Bay in Singapore",
+        "Experience the Colosseum and Roman Forum in Rome",
+        "Discover the Grand Palace and Wat Pho in Bangkok",
+        "Relax on the beaches of Bali",
+        "Snorkel at Maya Bay in Phuket"
+      ],
       "duration": "5 days",
       "group_size": 15,
       "age_category": "Adults",
       "languages": ["English", "German"],
-      "pictures": ["/assets/tours-images/cultural_tour1.jpg", "/assets/tours-images/cultural_tour2.jpg", "/assets/tours-images/cultural_tour3.jpg"]
+      "pictures": ["/assets/tours-images/cultural_tour1.jpg", "/assets/tours-images/cultural_tour2.jpg", "/assets/tours-images/cultural_tour3.jpg"],
+      "destinations": ["Paris", "Roma", "Bangkok", "Bali"],
+      "attractions": ["Colosseum", "Eiffel Tower", "Tower of London"],
+      "start_date": "2024-09-15",
+      "end_date": "2024-09-19",
+      "whatsIncluded": [
+        "Comfortable accommodations",
+        "Guided tours in English and Spanish",
+        "Delicious local meals",
+        "Entrance fees to attractions",
+        "Convenient hotel pickups and drop-offs"
+      ],
+      "whatsNotIncluded": [
+        "Flights to and from destinations",
+        "Personal expenses",
+        "Travel insurance"
+      ],
+      "itinerary": [
+        "Day 1: Paris - Marvel at the Eiffel Tower. Cruise along the Seine River. Explore Montmartre and Notre-Dame Cathedral.",
+        "Day 2: Singapore & Roma - Visit the futuristic Gardens by the Bay in Singapore. Experience the Colosseum and Roman Forum in Rome.",
+        "Day 3: Bangkok, Bali & Phuket - Discover the Grand Palace and Wat Pho in Bangkok. Relax on the beaches of Bali. Snorkel at Maya Bay in Phuket."
+      ]
     },
     {
       "id": 5,
       "name": "Wildlife Safari Expedition",
       "price_per_day": 250,
       "description": "Embark on a thrilling safari adventure through diverse landscapes. Spot exotic wildlife, stay in safari lodges, and enjoy nightly campfires.",
+      "listing": [
+        "Marvel at the Eiffel Tower in Paris",
+        "Cruise along the Seine River",
+        "Explore Montmartre and Notre-Dame Cathedral",
+        "Visit the futuristic Gardens by the Bay in Singapore",
+        "Experience the Colosseum and Roman Forum in Rome",
+        "Discover the Grand Palace and Wat Pho in Bangkok",
+        "Relax on the beaches of Bali",
+        "Snorkel at Maya Bay in Phuket"
+      ],
       "duration": "7 days",
       "group_size": 10,
       "age_category": "Adults",
       "languages": ["English", "Spanish"],
-      "pictures": ["/assets/tours-images/safari_expedition1.jpg", "/assets/tours-images/safari_expedition2.jpg", "/assets/tours-images/safari_expedition3.jpg"]
+      "pictures": ["/assets/tours-images/safari_expedition1.jpg", "/assets/tours-images/safari_expedition2.jpg", "/assets/tours-images/safari_expedition3.jpg"],
+      "destinations": ["Roma", "Bali", "Phuket"],
+      "attractions": ["Colosseum", "Eiffel Tower"],
+      "start_date": "2024-10-05",
+      "end_date": "2024-10-11",
+      "whatsIncluded": [
+        "Comfortable accommodations",
+        "Guided tours in English and Spanish",
+        "Delicious local meals",
+        "Entrance fees to attractions",
+        "Convenient hotel pickups and drop-offs"
+      ],
+      "whatsNotIncluded": [
+        "Flights to and from destinations",
+        "Personal expenses",
+        "Travel insurance"
+      ],
+      "itinerary": [
+        "Day 1: Paris - Marvel at the Eiffel Tower. Cruise along the Seine River. Explore Montmartre and Notre-Dame Cathedral.",
+        "Day 2: Singapore & Roma - Visit the futuristic Gardens by the Bay in Singapore. Experience the Colosseum and Roman Forum in Rome.",
+        "Day 3: Bangkok, Bali & Phuket - Discover the Grand Palace and Wat Pho in Bangkok. Relax on the beaches of Bali. Snorkel at Maya Bay in Phuket."
+      ]
     },
     {
       "id": 6,
       "name": "Wine Tasting Tour",
       "price_per_day": 130,
       "description": "Indulge in the finest wines of the region. This tour includes visits to vineyards, wine tastings, and gourmet meals paired with wines.",
+      "listing": [
+        "Marvel at the Eiffel Tower in Paris",
+        "Cruise along the Seine River",
+        "Explore Montmartre and Notre-Dame Cathedral",
+        "Visit the futuristic Gardens by the Bay in Singapore",
+        "Experience the Colosseum and Roman Forum in Rome",
+        "Discover the Grand Palace and Wat Pho in Bangkok",
+        "Relax on the beaches of Bali",
+        "Snorkel at Maya Bay in Phuket"
+      ],
       "duration": "2 days",
       "group_size": 8,
       "age_category": "Adults",
       "languages": ["English", "French"],
-      "pictures": ["/assets/tours-images/wine_tasting1.jpg", "/assets/tours-images/wine_tasting2.jpg", "/assets/tours-images/wine_tasting3.jpg"]
+      "pictures": ["/assets/tours-images/wine_tasting1.jpg", "/assets/tours-images/wine_tasting2.jpg", "/assets/tours-images/wine_tasting3.jpg"],
+      "destinations": ["Paris", "Bangkok", "Bali"],
+      "attractions": ["Eiffel Tower"],
+      "start_date": "2024-11-03",
+      "end_date": "2024-11-04",
+      "whatsIncluded": [
+        "Comfortable accommodations",
+        "Guided tours in English and Spanish",
+        "Delicious local meals",
+        "Entrance fees to attractions",
+        "Convenient hotel pickups and drop-offs"
+      ],
+      "whatsNotIncluded": [
+        "Flights to and from destinations",
+        "Personal expenses",
+        "Travel insurance"
+      ],
+      "itinerary": [
+        "Day 1: Paris - Marvel at the Eiffel Tower. Cruise along the Seine River. Explore Montmartre and Notre-Dame Cathedral.",
+        "Day 2: Singapore & Roma - Visit the futuristic Gardens by the Bay in Singapore. Experience the Colosseum and Roman Forum in Rome.",
+        "Day 3: Bangkok, Bali & Phuket - Discover the Grand Palace and Wat Pho in Bangkok. Relax on the beaches of Bali. Snorkel at Maya Bay in Phuket."
+      ]
     },
     {
       "id": 7,
       "name": "Historic Castle Tour",
       "price_per_day": 160,
       "description": "Step back in time with a tour of majestic castles. Explore the history, architecture, and legends of these iconic landmarks.",
+      "listing": [
+        "Marvel at the Eiffel Tower in Paris",
+        "Cruise along the Seine River",
+        "Explore Montmartre and Notre-Dame Cathedral",
+        "Visit the futuristic Gardens by the Bay in Singapore",
+        "Experience the Colosseum and Roman Forum in Rome",
+        "Discover the Grand Palace and Wat Pho in Bangkok",
+        "Relax on the beaches of Bali",
+        "Snorkel at Maya Bay in Phuket"
+      ],
       "duration": "4 days",
       "group_size": 12,
       "age_category": "Adults",
       "languages": ["English", "Italian"],
-      "pictures": ["/assets/tours-images/castle_tour1.jpg", "/assets/tours-images/castle_tour2.jpg", "/assets/tours-images/castle_tour3.jpg"]
+      "pictures": ["/assets/tours-images/castle_tour1.jpg", "/assets/tours-images/castle_tour2.jpg", "/assets/tours-images/castle_tour3.jpg"],
+      "destinations": ["Paris", "Roma", "Bali", "Phuket"],
+      "attractions": ["Eiffel Tower", "Colosseum"],
+      "start_date": "2025-01-10",
+      "end_date": "2025-01-13",
+      "whatsIncluded": [
+        "Comfortable accommodations",
+        "Guided tours in English and Spanish",
+        "Delicious local meals",
+        "Entrance fees to attractions",
+        "Convenient hotel pickups and drop-offs"
+      ],
+      "whatsNotIncluded": [
+        "Flights to and from destinations",
+        "Personal expenses",
+        "Travel insurance"
+      ],
+      "itinerary": [
+        "Day 1: Paris - Marvel at the Eiffel Tower. Cruise along the Seine River. Explore Montmartre and Notre-Dame Cathedral.",
+        "Day 2: Singapore & Roma - Visit the futuristic Gardens by the Bay in Singapore. Experience the Colosseum and Roman Forum in Rome.",
+        "Day 3: Bangkok, Bali & Phuket - Discover the Grand Palace and Wat Pho in Bangkok. Relax on the beaches of Bali. Snorkel at Maya Bay in Phuket."
+      ]
     },
     {
       "id": 8,
       "name": "Culinary Delights Tour",
       "price_per_day": 140,
       "description": "Savor the flavors of local cuisine on this culinary journey. Enjoy cooking classes, food market tours, and dining at top restaurants.",
+      "listing": [
+        "Marvel at the Eiffel Tower in Paris",
+        "Cruise along the Seine River",
+        "Explore Montmartre and Notre-Dame Cathedral",
+        "Visit the futuristic Gardens by the Bay in Singapore",
+        "Experience the Colosseum and Roman Forum in Rome",
+        "Discover the Grand Palace and Wat Pho in Bangkok",
+        "Relax on the beaches of Bali",
+        "Snorkel at Maya Bay in Phuket"
+      ],
       "duration": "3 days",
       "group_size": 10,
       "age_category": "Adults",
       "languages": ["English", "Spanish"],
-      "pictures": ["/assets/tours-images/culinary_tour1.jpg", "/assets/tours-images/culinary_tour2.jpg", "/assets/tours-images/culinary_tour3.jpg"]
+      "pictures": ["/assets/tours-images/culinary_tour1.jpg", "/assets/tours-images/culinary_tour2.jpg", "/assets/tours-images/culinary_tour3.jpg"],
+      "destinations": ["Bangkok", "Bali"],
+      "attractions": ["Eiffel Tower", "Louvre"],
+      "start_date": "2025-01-10",
+      "end_date": "2025-01-13",
+      "whatsIncluded": [
+        "Comfortable accommodations",
+        "Guided tours in English and Spanish",
+        "Delicious local meals",
+        "Entrance fees to attractions",
+        "Convenient hotel pickups and drop-offs"
+      ],
+      "whatsNotIncluded": [
+        "Flights to and from destinations",
+        "Personal expenses",
+        "Travel insurance"
+      ],
+      "itinerary": [
+        "Day 1: Paris - Marvel at the Eiffel Tower. Cruise along the Seine River. Explore Montmartre and Notre-Dame Cathedral.",
+        "Day 2: Singapore & Roma - Visit the futuristic Gardens by the Bay in Singapore. Experience the Colosseum and Roman Forum in Rome.",
+        "Day 3: Bangkok, Bali & Phuket - Discover the Grand Palace and Wat Pho in Bangkok. Relax on the beaches of Bali. Snorkel at Maya Bay in Phuket."
+      ]
     },
     {
       "id": 9,
       "name": "Adventure Sports Expedition",
       "price_per_day": 220,
       "description": "Get your adrenaline pumping with thrilling adventure sports. Experience activities like rock climbing, zip-lining, and white-water rafting.",
+      "listing": [
+        "Marvel at the Eiffel Tower in Paris",
+        "Cruise along the Seine River",
+        "Explore Montmartre and Notre-Dame Cathedral",
+        "Visit the futuristic Gardens by the Bay in Singapore",
+        "Experience the Colosseum and Roman Forum in Rome",
+        "Discover the Grand Palace and Wat Pho in Bangkok",
+        "Relax on the beaches of Bali",
+        "Snorkel at Maya Bay in Phuket"
+      ],
       "duration": "6 days",
       "group_size": 10,
       "age_category": "Adults",
       "languages": ["English", "French"],
-      "pictures": ["/assets/tours-images/adventure_sports1.jpg", "/assets/tours-images/adventure_sports2.jpg", "/assets/tours-images/adventure_sports3.jpg"]
+      "pictures": ["/assets/tours-images/adventure_sports1.jpg", "/assets/tours-images/adventure_sports2.jpg", "/assets/tours-images/adventure_sports3.jpg"],
+      "destinations": ["Roma", "Bangkok", "Phuket"],
+      "attractions": ["Colosseum", "Eiffel Tower"],
+      "start_date": "2025-01-10",
+      "end_date": "2025-01-13",
+      "whatsIncluded": [
+        "Comfortable accommodations",
+        "Guided tours in English and Spanish",
+        "Delicious local meals",
+        "Entrance fees to attractions",
+        "Convenient hotel pickups and drop-offs"
+      ],
+      "whatsNotIncluded": [
+        "Flights to and from destinations",
+        "Personal expenses",
+        "Travel insurance"
+      ],
+      "itinerary": [
+        "Day 1: Paris - Marvel at the Eiffel Tower. Cruise along the Seine River. Explore Montmartre and Notre-Dame Cathedral.",
+        "Day 2: Singapore & Roma - Visit the futuristic Gardens by the Bay in Singapore. Experience the Colosseum and Roman Forum in Rome.",
+        "Day 3: Bangkok, Bali & Phuket - Discover the Grand Palace and Wat Pho in Bangkok. Relax on the beaches of Bali. Snorkel at Maya Bay in Phuket."
+      ]
     },
     {
       "id": 10,
       "name": "Island Hopping Adventure",
       "price_per_day": 180,
       "description": "Explore exotic islands and pristine beaches on this island hopping adventure. Snorkel in crystal-clear waters and relax on sandy shores.",
+      "listing": [
+        "Marvel at the Eiffel Tower in Paris",
+        "Cruise along the Seine River",
+        "Explore Montmartre and Notre-Dame Cathedral",
+        "Visit the futuristic Gardens by the Bay in Singapore",
+        "Experience the Colosseum and Roman Forum in Rome",
+        "Discover the Grand Palace and Wat Pho in Bangkok",
+        "Relax on the beaches of Bali",
+        "Snorkel at Maya Bay in Phuket"
+      ],
       "duration": "5 days",
       "group_size": 12,
       "age_category": "Adults",
       "languages": ["English", "German"],
-      "pictures": ["/assets/tours-images/island_hopping1.jpg", "/assets/tours-images/island_hopping2.jpg", "/assets/tours-images/island_hopping3.jpg"]
+      "pictures": ["/assets/tours-images/island_hopping1.jpg", "/assets/tours-images/island_hopping2.jpg", "/assets/tours-images/island_hopping3.jpg"],
+      "destinations": ["Bali", "Phuket"],
+      "attractions": ["Eiffel Tower", "Statue of Liberty"],
+      "start_date": "2025-01-10",
+      "end_date": "2025-01-13",
+      "whatsIncluded": [
+        "Comfortable accommodations",
+        "Guided tours in English and Spanish",
+        "Delicious local meals",
+        "Entrance fees to attractions",
+        "Convenient hotel pickups and drop-offs"
+      ],
+      "whatsNotIncluded": [
+        "Flights to and from destinations",
+        "Personal expenses",
+        "Travel insurance"
+      ],
+      "itinerary": [
+        "Day 1: Paris - Marvel at the Eiffel Tower. Cruise along the Seine River. Explore Montmartre and Notre-Dame Cathedral.",
+        "Day 2: Singapore & Roma - Visit the futuristic Gardens by the Bay in Singapore. Experience the Colosseum and Roman Forum in Rome.",
+        "Day 3: Bangkok, Bali & Phuket - Discover the Grand Palace and Wat Pho in Bangkok. Relax on the beaches of Bali. Snorkel at Maya Bay in Phuket."
+      ]
     },
     {
       "id": 11,
       "name": "Art and Architecture Tour",
       "price_per_day": 150,
       "description": "Discover masterpieces of art and architecture. Visit museums, galleries, and iconic architectural landmarks.",
+      "listing": [
+        "Marvel at the Eiffel Tower in Paris",
+        "Cruise along the Seine River",
+        "Explore Montmartre and Notre-Dame Cathedral",
+        "Visit the futuristic Gardens by the Bay in Singapore",
+        "Experience the Colosseum and Roman Forum in Rome",
+        "Discover the Grand Palace and Wat Pho in Bangkok",
+        "Relax on the beaches of Bali",
+        "Snorkel at Maya Bay in Phuket"
+      ],
       "duration": "4 days",
       "group_size": 15,
       "age_category": "Adults",
       "languages": ["English", "Spanish"],
-      "pictures": ["/assets/tours-images/art_architecture1.jpg", "/assets/tours-images/art_architecture2.jpg", "/assets/tours-images/art_architecture3.jpg"]
+      "pictures": ["/assets/tours-images/art_architecture1.jpg", "/assets/tours-images/art_architecture2.jpg", "/assets/tours-images/art_architecture3.jpg"],
+      "destinations": ["Paris", "Roma", "Bangkok", "Bali"],
+      "attractions": ["Eiffel Tower", "Louvre"],
+      "start_date": "2025-01-10",
+      "end_date": "2025-01-13",
+      "whatsIncluded": [
+        "Comfortable accommodations",
+        "Guided tours in English and Spanish",
+        "Delicious local meals",
+        "Entrance fees to attractions",
+        "Convenient hotel pickups and drop-offs"
+      ],
+      "whatsNotIncluded": [
+        "Flights to and from destinations",
+        "Personal expenses",
+        "Travel insurance"
+      ],
+      "itinerary": [
+        "Day 1: Paris - Marvel at the Eiffel Tower. Cruise along the Seine River. Explore Montmartre and Notre-Dame Cathedral.",
+        "Day 2: Singapore & Roma - Visit the futuristic Gardens by the Bay in Singapore. Experience the Colosseum and Roman Forum in Rome.",
+        "Day 3: Bangkok, Bali & Phuket - Discover the Grand Palace and Wat Pho in Bangkok. Relax on the beaches of Bali. Snorkel at Maya Bay in Phuket."
+      ]
     },
     {
       "id": 12,
       "name": "Photography Expedition",
       "price_per_day": 190,
       "description": "Capture stunning landscapes and cultural moments on this photography expedition. Receive guidance from professional photographers.",
+      "listing": [
+        "Marvel at the Eiffel Tower in Paris",
+        "Cruise along the Seine River",
+        "Explore Montmartre and Notre-Dame Cathedral",
+        "Visit the futuristic Gardens by the Bay in Singapore",
+        "Experience the Colosseum and Roman Forum in Rome",
+        "Discover the Grand Palace and Wat Pho in Bangkok",
+        "Relax on the beaches of Bali",
+        "Snorkel at Maya Bay in Phuket"
+      ],
       "duration": "5 days",
       "group_size": 8,
       "age_category": "Adults",
       "languages": ["English", "Italian"],
-      "pictures": ["/assets/tours-images/photography_expedition1.jpg", "/assets/tours-images/photography_expedition2.jpg", "/assets/tours-images/photography_expedition3.jpg"]
+      "pictures": ["/assets/tours-images/photography_expedition1.jpg", "/assets/tours-images/photography_expedition2.jpg", "/assets/tours-images/photography_expedition3.jpg"],
+      "destinations": ["Paris", "Singapore", "Roma"],
+      "attractions": ["Eiffel Tower", "Colosseum", "Vatican Museums"],
+      "start_date": "2025-01-10",
+      "end_date": "2025-01-13",
+      "whatsIncluded": [
+        "Comfortable accommodations",
+        "Guided tours in English and Spanish",
+        "Delicious local meals",
+        "Entrance fees to attractions",
+        "Convenient hotel pickups and drop-offs"
+      ],
+      "whatsNotIncluded": [
+        "Flights to and from destinations",
+        "Personal expenses",
+        "Travel insurance"
+      ],
+      "itinerary": [
+        "Day 1: Paris - Marvel at the Eiffel Tower. Cruise along the Seine River. Explore Montmartre and Notre-Dame Cathedral.",
+        "Day 2: Singapore & Roma - Visit the futuristic Gardens by the Bay in Singapore. Experience the Colosseum and Roman Forum in Rome.",
+        "Day 3: Bangkok, Bali & Phuket - Discover the Grand Palace and Wat Pho in Bangkok. Relax on the beaches of Bali. Snorkel at Maya Bay in Phuket."
+      ]
     }
   ]
 }
