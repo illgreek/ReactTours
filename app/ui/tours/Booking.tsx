@@ -22,15 +22,15 @@ interface BookingProps {
 }
 
 const BookingComponent: React.FC<BookingProps> = ({ tour }) => {
-    if (!tour) {
-        return <div>Loading...</div>;
-    }
-
     const [adultTickets, setAdultTickets] = useState(1);
     const [childTickets, setChildTickets] = useState(0);
     const [seniorTickets, setSeniorTickets] = useState(0);
     const [addServicePerBooking, setAddServicePerBooking] = useState(false);
     const [addServicePerPerson, setAddServicePerPerson] = useState(false);
+
+    if (!tour) {
+        return <div>Loading...</div>;
+    }
 
     const basePrice =
         tour.price_per_day * (adultTickets + childTickets + seniorTickets) +

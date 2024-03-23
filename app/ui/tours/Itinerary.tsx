@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useSpring, animated } from 'react-spring';
+import { useSprings, animated } from 'react-spring';
 
 interface ItineraryProps {
     itinerary: string[];
@@ -9,35 +9,35 @@ const Itinerary: React.FC<ItineraryProps> = ({ itinerary }) => {
     const [selectedDay, setSelectedDay] = useState<number | null>(0); // Змінено початковий стан на 0
 
     useEffect(() => {
-        setSelectedDay(0);
+        setSelectedDay(0); // Встановлення 0 при завантаженні
     }, []);
 
     const handleDayClick = (dayIndex: number) => {
         if (selectedDay === dayIndex) {
-            setSelectedDay(null);
+            setSelectedDay(null); // Deselect if already selected
         } else {
             setSelectedDay(dayIndex);
         }
     };
 
     // Анімація для зникаючого/появляючого контенту
-    const fadeAnimations: { [key: number]: any } = {};
-    itinerary.forEach((_, index) => {
-        fadeAnimations[index] = useSpring({
+    const fadeAnimations = useSprings(
+        itinerary.length,
+        itinerary.map((_, index) => ({
             opacity: selectedDay === index ? 1 : 0,
             marginTop: selectedDay === index ? 0 : -20,
             config: { duration: 300 },
-        });
-    });
+        }))
+    );
 
     // Анімація для відкриття/закриття дня
-    const slideAnimations: { [key: number]: any } = {};
-    itinerary.forEach((_, index) => {
-        slideAnimations[index] = useSpring({
+    const slideAnimations = useSprings(
+        itinerary.length,
+        itinerary.map((_, index) => ({
             height: selectedDay === index ? 'auto' : 0,
             config: { duration: 300 },
-        });
-    });
+        }))
+    );
 
     return (
         <div className="mt-8">

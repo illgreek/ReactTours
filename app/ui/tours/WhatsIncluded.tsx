@@ -7,8 +7,6 @@ interface WhatsIncludedProps {
 }
 
 const WhatsIncluded: React.FC<WhatsIncludedProps> = ({ included, notIncluded }) => {
-    console.log(included);
-    console.log(notIncluded);
     return (
         <div className="grid grid-cols-2 gap-8">
             <div>
