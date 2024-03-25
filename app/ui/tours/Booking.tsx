@@ -67,28 +67,36 @@ const BookingComponent: React.FC<BookingProps> = ({ tour }) => {
     };
 
     const handleBookNowClick = () => {
-        let message = '<div style="text-align: center;">Tickets Booked:</div><br>';
+        if (adultTickets === 0 && childTickets === 0 && seniorTickets === 0) {
+            Swal.fire({
+                title: 'Error',
+                text: 'Please select at least one ticket',
+                icon: 'error',
+                confirmButtonText: 'OK',
+            });
+        } else {
+            let message = '<div style="text-align: center;">Tickets Booked:</div><br>';
 
-        if (adultTickets > 0) {
-            message += `<div>Adult Tickets: ${adultTickets}</div>`;
-        }
-        if (childTickets > 0) {
-            message += `<div>Child Tickets: ${childTickets}</div>`;
-        }
-        if (seniorTickets > 0) {
-            message += `<div>Senior Tickets: ${seniorTickets}</div>`;
-        }
+            if (adultTickets > 0) {
+                message += `<div>Adult Tickets: ${adultTickets}</div>`;
+            }
+            if (childTickets > 0) {
+                message += `<div>Child Tickets: ${childTickets}</div>`;
+            }
+            if (seniorTickets > 0) {
+                message += `<div>Senior Tickets: ${seniorTickets}</div>`;
+            }
 
-        message += `<div style="font-weight: bold; padding-top: 20px;">Total Price: $${totalPrice}</div>`;
+            message += `<div style="font-weight: bold; padding-top: 20px;">Total Price: $${totalPrice}</div>`;
 
-        Swal.fire({
-            title: 'Booking Information',
-            html: message,
-            icon: 'info',
-            confirmButtonText: 'OK'
-        });
+            Swal.fire({
+                title: 'Booking Information',
+                html: message,
+                icon: 'info',
+                confirmButtonText: 'OK',
+            });
+        }
     };
-
 
     return (
         <div className="container mx-auto px-4 py-6 bg-white rounded-lg shadow-lg">
@@ -110,7 +118,6 @@ const BookingComponent: React.FC<BookingProps> = ({ tour }) => {
                     <p>{format(endDate, 'MMMM dd, yyyy')}</p>
                 </div>
             </div>
-
 
             <h2 className="text-xl font-bold mb-2">Tickets</h2>
             <div className="mb-4">

@@ -14,11 +14,11 @@ const RatingAndBookings: React.FC = () => {
     }, []);
 
     return (
-        <div className="my-4 flex flex-row gap-8">
-            <p className="text-dark_blue">Rating:
+        <div className="my-4 flex flex-row sm:gap-8 gap-2">
+            <p className="text-dark_blue text-sm sm:text-regular">Rating:
                 <CountUp className="pl-2" start={0} end={rating} decimals={1} duration={1.5} />
             </p>
-            <p className="text-dark_blue ">Bookings:
+            <p className="text-dark_blue text-sm sm:text-regular">Bookings:
                 <CountUp className="pl-2" start={0} end={bookings} duration={1.5} />
             </p>
         </div>

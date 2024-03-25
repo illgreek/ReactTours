@@ -1,46 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { useSprings, animated } from 'react-spring';
 
 interface ItineraryProps {
     itinerary: string[];
 }
 
 const Itinerary: React.FC<ItineraryProps> = ({ itinerary }) => {
-    const [selectedDay, setSelectedDay] = useState<number | null>(0); // Змінено початковий стан на 0
+    const [selectedDay, setSelectedDay] = useState<number | null>(0);
 
     useEffect(() => {
-        setSelectedDay(0); // Встановлення 0 при завантаженні
+        setSelectedDay(0);
     }, []);
 
     const handleDayClick = (dayIndex: number) => {
         if (selectedDay === dayIndex) {
-            setSelectedDay(null); // Deselect if already selected
+            setSelectedDay(null);
         } else {
             setSelectedDay(dayIndex);
         }
     };
 
-    // Анімація для зникаючого/появляючого контенту
-    const fadeAnimations = useSprings(
-        itinerary.length,
-        itinerary.map((_, index) => ({
-            opacity: selectedDay === index ? 1 : 0,
-            marginTop: selectedDay === index ? 0 : -20,
-            config: { duration: 300 },
-        }))
-    );
-
-    // Анімація для відкриття/закриття дня
-    const slideAnimations = useSprings(
-        itinerary.length,
-        itinerary.map((_, index) => ({
-            height: selectedDay === index ? 'auto' : 0,
-            config: { duration: 300 },
-        }))
-    );
-
     return (
-        <div className="mt-8">
+        <div className="md:my-8 mt-8">
             <h2 className="text-2xl font-bold">Itinerary</h2>
             <div className="">
                 {itinerary.map((day, index) => (
@@ -53,16 +33,14 @@ const Itinerary: React.FC<ItineraryProps> = ({ itinerary }) => {
                         >
                             <span
                                 className={`inline-block w-4 h-4 mr-2 rounded-full ${selectedDay === index ? 'bg-orange' : 'border-orange border-2'}`}
-                            ></span> {/* Orange dot */}
+                            ></span>
                             Day {index + 1}
                         </button>
-                        <animated.div style={slideAnimations[index]} className="overflow-hidden">
-                            {selectedDay === index && (
-                                <animated.div style={fadeAnimations[index]} className="bg-gray-100 px-6 rounded-md">
-                                    <p>{day}</p>
-                                </animated.div>
-                            )}
-                        </animated.div>
+                        {selectedDay === index && (
+                            <div className="bg-gray-100 px-6 rounded-md">
+                                <p>{day}</p>
+                            </div>
+                        )}
                     </div>
                 ))}
             </div>

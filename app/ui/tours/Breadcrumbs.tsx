@@ -9,19 +9,19 @@ interface BreadcrumbsProps {
 const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ tourName }) => {
     return (
         <nav className="py-4 text-sm" aria-label="breadcrumbs">
-            <ol className="flex space-x-4">
+            <ol className="flex sm:space-x-2  space-x-0.5">
                 <li>
                     <Link className="text-dark_blue" href="/">
                         Home
                     </Link>
                 </li>
-                <li className="flex items-center space-x-2">
+                <li className="flex items-center sm:space-x-2  space-x-0.5">
                     <span className="text-dark_blue">{'>'}</span>
                     <Link className="text-dark_blue" href="/tours">
                         Tours
                     </Link>
                 </li>
-                <li className="flex items-center space-x-2">
+                <li className="flex items-center sm:space-x-2 space-x-0.5">
                     <span className="text-dark_blue">{'>'}</span>
                     <span className="text-dark_blue">{tourName}</span>
                 </li>

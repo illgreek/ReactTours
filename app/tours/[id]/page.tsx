@@ -13,6 +13,9 @@ import TourOverview from '../../ui/tours/TourOverview';
 import TourHighlights from '../../ui/tours/TourHighlights';
 import WhatsIncluded from '../../ui/tours/WhatsIncluded';
 import Itinerary from '../../ui/tours/Itinerary';
+import AvailabilityCalendar from "../../ui/tours/AvailabilityCalendar";
+import FAQ from "../../ui/tours/FAQ";
+import YouMightAlsoLike from "@/app/ui/tours/YouMightAlsoLike";
 
 interface TourProps {
     id: number;
@@ -36,6 +39,7 @@ interface TourProps {
 
 const TourPage: React.FC = () => {
     const pathname = usePathname();
+    const location = window.location.href;
     const id = parseInt(pathname.split('/').pop()!, 10);
 
     if (isNaN(id)) {
@@ -55,19 +59,19 @@ const TourPage: React.FC = () => {
 
             <h1 className="text-2xl text-dark_blue font-bold">{tour.name}</h1>
 
-            <div className="flex flex-row justify-between">
+            <div className="flex sm:flex-row flex-col justify-between">
                 {/* TourRating */}
                 <TourRating />
 
                 {/* TourShare */}
-                <TourShare url={`https://example.com/tours/${tour.id}`} />
+                <TourShare url={location} />
             </div>
 
             {/* Use TourGallery component */}
             <TourGallery pictures={tour.pictures} />
 
-            <div className="flex flex-row justify-between gap-8">
-                <div className="w-2/3">
+            <div className="flex lg:flex-row flex-col justify-between md:gap-8">
+                <div className="lg:w-2/3 w-full">
                     {/* TourDetails */}
                     <TourDetails
                         duration={tour.duration}
@@ -92,15 +96,30 @@ const TourPage: React.FC = () => {
                         notIncluded={tour.whatsNotIncluded}
                     />
 
-                    {/* Use Itinerary component */}
-                    <Itinerary itinerary={tour.itinerary} />
+                    <div className="grid md:grid-cols-2 grid-cols-1 md:gap-8 ">
+                        {/* Use Itinerary component */}
+                        <Itinerary itinerary={tour.itinerary} />
+
+                        {/* Use AvailabilityCalendar component */}
+                        <AvailabilityCalendar startDate={new Date(tour.start_date)} endDate={new Date(tour.end_date)} />
+                    </div>
+
+                    {/* Use FAQ component */}
+                    <FAQ />
+
+
                 </div>
 
-                <div className="w-1/3 py-8">
+                <div className="lg:w-1/3 w-full py-8">
                     {/* Booking */}
                     <BookingComponent tour={tour} />
                 </div>
+
             </div>
+
+            {/* Use YouMightAlsoLike component */}
+            <YouMightAlsoLike />
+
         </div>
     );
 };

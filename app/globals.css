@@ -67,7 +67,7 @@ a:hover {
 }
 
 .swiper-pagination{
-  bottom: 0!important;
+  bottom: -5px!important;
 }
 .swiper-pagination-bullet{
   height: 10px!important;
@@ -107,5 +107,29 @@ a:hover {
 .ticket-button{
   cursor: pointer;
 }
+
+.availability {
+  background-color: orange !important;
+  color: white !important;
+}
+
+.react-calendar{
+  border: none!important;
+}
+
+abbr:where([title]){
+  text-decoration: none!important;
+}
+
+.react-calendar__tile:disabled{
+  background-color: #fff!important;
+}
+
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){
+  overflow: auto!important;
+  padding-right: 0px !important;
+}
+
+
 
 

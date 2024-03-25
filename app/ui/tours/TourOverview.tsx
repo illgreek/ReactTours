@@ -11,7 +11,7 @@ const TourOverview: React.FC<TourOverviewProps> = ({ description, destinations, 
     return (
         <div>
             <h2 className="text-2xl font-bold mb-4">Tour Overview</h2>
-            <p className="mb-4">{description}</p>
+            <p className="mb-8">{description}</p>
         </div>
     );
 };

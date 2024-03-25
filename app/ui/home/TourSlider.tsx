@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -114,6 +115,14 @@ const TourSlider: React.FC = () => {
         );
     }
 
+    const trimDescription = (description: string) => {
+        const maxLength = 100;
+        if (description.length > maxLength) {
+            return `${description.slice(0, maxLength)}...`;
+        }
+        return description;
+    };
+
     return (
         <div className="relative px-4 container mx-auto">
             <button className="absolute top-[60%] left-[0px] transform -translate-y-1/2 bg-gray-200 p-2 rounded-l-md z-10" >
@@ -127,17 +136,19 @@ const TourSlider: React.FC = () => {
                 <Swiper {...swiperParams} ref={swiperRef}>
                     {limitedTours.map((tour: Tour) => (
                         <SwiperSlide key={tour.id}>
-                            <div className="bg-white rounded-lg overflow-hidden flex flex-col h-full">
-                                <Image src={`${tour.pictures[0]}`} alt={tour.name} width='300' height='200' className="w-full h-40 object-cover aspect-video" />
-                                <div className="p-4 flex flex-col justify-between h-full">
-                                    <h3 className="text-lg font-bold text-dark_blue mb-2">{tour.name}</h3>
-                                    <p className="text-dark_blue">{tour.description}</p>
-                                    <div className="flex justify-between mt-4 border-t border-light_gray pt-4">
-                                        <p className="text-dark_blue">{tour.duration}</p>
-                                        <p className="text-dark_blue">${tour.price_per_day} per day</p>
+                            <Link href={`/tours/${tour.id}`}>
+                                <div className="bg-white rounded-lg overflow-hidden flex flex-col h-full">
+                                    <Image src={`${tour.pictures[0]}`} alt={tour.name} width='300' height='200' className="w-full h-40 object-cover aspect-video" />
+                                    <div className="p-4 flex flex-col justify-between h-full">
+                                        <h3 className="text-lg font-bold text-dark_blue mb-2">{tour.name}</h3>
+                                        <p className="text-dark_blue">{trimDescription(tour.description)}</p>
+                                        <div className="flex justify-between mt-4 border-t border-light_gray pt-4">
+                                            <p className="text-dark_blue">{tour.duration}</p>
+                                            <p className="text-dark_blue">${tour.price_per_day} per day</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </SwiperSlide>
                     ))}
                 </Swiper>

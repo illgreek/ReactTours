@@ -8,7 +8,7 @@ interface WhatsIncludedProps {
 
 const WhatsIncluded: React.FC<WhatsIncludedProps> = ({ included, notIncluded }) => {
     return (
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
             <div>
                 <h2 className="text-2xl font-bold mb-4">Whats Included</h2>
                 <ul className="list-disc list-inside">

@@ -38,7 +38,7 @@ const TourGallery: React.FC<TourGalleryProps> = ({ pictures }) => {
         return (
             <div>
                 {/* Large Image Skeleton */}
-                <div className="flex items-center justify-center h-[500px] w-full rounded-lg overflow-hidden animate-pulse bg-light_gray mt-4">
+                <div className="flex items-center justify-center sm:h-[500px] h-[250px] w-full rounded-lg overflow-hidden animate-pulse bg-light_gray mt-4">
                     <div className="h-full w-1/2 bg-gray-300 animate-pulse"></div>
                 </div>
 
@@ -62,7 +62,7 @@ const TourGallery: React.FC<TourGalleryProps> = ({ pictures }) => {
                     <img
                         src={selectedImage}
                         alt="Selected"
-                        className="rounded-lg w-full object-cover mb-4 h-[500px] transition-opacity duration-500"
+                        className="rounded-lg w-full object-cover mb-4 sm:h-[500px] h-[250px] transition-opacity duration-500"
                     />
                 </div>
             )}
@@ -75,7 +75,7 @@ const TourGallery: React.FC<TourGalleryProps> = ({ pictures }) => {
                         src={picture}
                         alt={`Tour Image ${index + 1}`}
                         onClick={() => handleImageClick(picture)}
-                        className={`rounded-lg cursor-pointer h-20 w-34 object-cover ${
+                        className={`rounded-lg cursor-pointer h-20 w-28 object-cover ${
                             selectedImage === picture ? 'opacity-100' : 'opacity-50'
                         } hover:opacity-100 transition-opacity duration-300`}
                     />
