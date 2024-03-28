@@ -30,10 +30,10 @@ const Footer: React.FC = () => {
                         <Link href="/" passHref>
                             Home
                         </Link>
-                        <Link href="/tour" passHref>
+                        <Link href="/tours" passHref>
                             Tour
                         </Link>
-                        <Link href="/destination" passHref>
+                        <Link href="/tours" passHref>
                             Destination
                         </Link>
                         <Link href="/contact" passHref>

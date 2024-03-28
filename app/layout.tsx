@@ -1,3 +1,5 @@
+// app\layout.tsx
+
 // @ts-ignore
 import type { Metadata } from "next";
 // @ts-ignore
@@ -20,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <body className={`${inter.className}`}>
+        <body suppressHydrationWarning={true} className={`${inter.className}`}>
             <Header />
             <div className="">
                 {children}

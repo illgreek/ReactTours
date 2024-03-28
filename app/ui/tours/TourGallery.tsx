@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from "next/image";
 
 interface TourGalleryProps {
     pictures: string[];
@@ -59,10 +60,12 @@ const TourGallery: React.FC<TourGalleryProps> = ({ pictures }) => {
             {/* Large Image */}
             {selectedImage && (
                 <div className="mt-4">
-                    <img
+                    <Image
                         src={selectedImage}
                         alt="Selected"
                         className="rounded-lg w-full object-cover mb-4 sm:h-[500px] h-[250px] transition-opacity duration-500"
+                        height="500"
+                        width="1000"
                     />
                 </div>
             )}
@@ -70,10 +73,12 @@ const TourGallery: React.FC<TourGalleryProps> = ({ pictures }) => {
             {/* Gallery */}
             <div className="flex flex-wrap flex-row gap-4">
                 {validPictures.map((picture, index) => (
-                    <img
+                    <Image
                         key={index}
                         src={picture}
                         alt={`Tour Image ${index + 1}`}
+                        height="200"
+                        width="300"
                         onClick={() => handleImageClick(picture)}
                         className={`rounded-lg cursor-pointer h-20 w-28 object-cover ${
                             selectedImage === picture ? 'opacity-100' : 'opacity-50'

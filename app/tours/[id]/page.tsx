@@ -106,8 +106,6 @@ const TourPage: React.FC = () => {
 
                     {/* Use FAQ component */}
                     <FAQ />
-
-
                 </div>
 
                 <div className="lg:w-1/3 w-full py-8">
